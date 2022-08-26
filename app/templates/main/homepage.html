@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}
+    {{super()}}
+    Homepage
+{% endblock title%}
+
+{% block page_content %}
+<div>
+	<h3><span style = "color : green;">Welcome | Karibu</span> {{app_name}}</h3>
+	<img class = "img-rounded" style = "width : 100%; height = auto;" src = "{{url_for('static', filename = 'child_birth_2.jpg')}}">
+</div>
+{% endblock page_content %}
